@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notification page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo_content">
+          <div class="logo">
+            <i class="bx bx-home"></i>
+            <div class="logo_name"><p>Jill collections</p></div>
+          </div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+          <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="search..." />
+            <!-- <span class="ttooltip">Dashboard</span> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-grid-alt"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+            <!-- <span class="ttooltip">Dashboard</span> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-user"></i>
+              <span class="links_name">user </span>
+            </a>
+            <!-- <span class="ttooltip">Dashboard</span> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-bell"></i>
+              <span class="links_name">notification</span>
+            </a>
+            <!-- <span class="ttooltip">Dashboard</span> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="links_name">Settings</span>
+            </a>
+            <!-- <span class="ttooltip">Dashboard</span> -->
+          </li>
+        </ul>
+      </div>
+      <!-- notification html -->
+      <div class="notification_container">
+        <header>
+          <div class="notification_header">
+            <h1>Notification</h1>
+            <span id="num-of-notif"></span>
+          </div>
+          <p id="mark-as-read">Mark All as Read</p>
+        </header>
+        <main>
+          <div class="notification_card unread">
+            <i class="bx bx-bell"></i>
+            <div class="description">
+              <p>Hi guys I'm Wilfred ikiara</p>
+              <p id="notif-time">1m ago</p>
+            </div>
+          </div>
+          <div class="notification_card">
+            <i class="bx bx-bell"></i>
+            <div class="description">
+              <p>Hi guys I'm Wilfred ikiara</p>
+              <p id="notif-time">1m ago</p>
+            </div>
+          </div>
+          <div class="notification_card unread">
+            <i class="bx bx-bell"></i>
+            <div class="description">
+              <p>Hi guys I'm Wilfred ikiara</p>
+              <p id="notif-time">1m ago</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

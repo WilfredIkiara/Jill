@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jill Collections</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="wrapper">
+        <div class="sidebar">
+          <h2>sidebar</h2>
+          <ul>
+            <li>
+              <a href="#"><i></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><img src="user.png" class="user" />Profile</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="notification.png" class="notification" />About</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="phone-call.png" class="contact" />Contact</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="settings.png" class="settings" />settings</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Open your Jill account <br />
+          in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="modal__form">
+          <label>First Name</label>
+          <input type="text" />
+          <label>Last Name</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="email" />
+          <label>Phone number</label>
+          <input type="number" />
+          <label>House number</label>
+          <input type="email" />
+          <button class="btn">Next step &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+
+      <!-- contact landlord -->
+      <!-- <div class="contact_landlord">
+        <h2>
+          To contact the landlord<br />
+          press the button below
+        </h2>
+        <button class="btn">contact landlord &rarr;</button>
+      </div> -->
+
+      <div class="total-amount">
+        <div>
+          <p class="total-amount__label">Total Paid Amount</p>
+          <p class="total-amount__date">
+            As of <span class="date">05/03/2037</span>
+          </p>
+        </div>
+        <p class="total-amount__value">0000KSH</p>
+      </div>
+      <div class="search">
+        <label class="serach-name">search name</label>
+        <input
+          class="search-bar"
+          placeholder="Enter text here"
+          type="text"
+          id="unique-input"
+        />
+      </div>
+      <!-- pay now button  -->
+      <div class="operation operation--pay">
+        <h2>Make Payment now</h2>
+        <form class="form form--pay">
+          <input
+            type="number"
+            maxlength="10"
+            class="form__input form__input--number"
+          />
+          <button class="form__btn form__btn--close">→</button>
+          <label class="form__label">confirl number</label>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
